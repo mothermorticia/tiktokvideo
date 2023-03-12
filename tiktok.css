@@ -1,0 +1,209 @@
+:root {
+	--who: #55433B;
+	--worst: #BDA79E;
+	}
+	
+	.bt-tiktokb{
+	width: 280px;
+	border: 1px solid #ccc;
+	margin: 10px auto;
+	border-radius: 15px;
+	background: #444;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: flex;
+	height: 400px;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);}
+	
+	.bt-tiktok-header{
+	text-align: center;
+	padding: 20px;
+	font-family: 'karla';
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 10px;
+	width:100%;
+	background:linear-gradient(180deg, #222a 0%, transparent 85%)}
+	
+	.bt-tiktokimg{
+	height: 250px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background: linear-gradient(0deg, #222a 0%, transparent 95%);
+	object-fit: cover;}
+	
+	.bt-tiktok-lateral{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	right: 0;
+	width: 60px;
+	height: 75%;
+	gap: 15px;}
+	
+	.bt-tiktok-profile{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	}
+	
+	.bt-tiktok-lateral > i{
+	color: #fff;
+	font-size: 20px;
+	cursor:pointer;}
+	
+	.bt-tiktok-profile > img{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	object-fit: cover;}
+	
+	.bt-tiktok-profile > i{
+	position: absolute;
+	bottom: -8px;
+	background-image: linear-gradient(to top left, var(--worst), var(--who));
+	box-shadow: 0px 0px 6px var(--worst);
+  border: 0.8px solid #fff;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 6.5px;
+	padding: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 7px;
+	height: 7px;
+	line-height: 13px;
+	}
+	
+	.bt-tiktok-menu{
+	display: flex;
+	align-items: center;
+	height: 50px;
+	justify-content: center;
+	gap: 20px;
+	font-size:14px;
+	color:#BDA79E;
+	}
+	
+	.bt-tiktok-menu > .fa-circle-plus{
+	font-size: 24px;
+	margin: 0px 6px;
+	}
+	
+	.bt-tiktok-info{
+	width: 80%;
+	height: 90px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-direction: column;
+	padding-left: 10px;
+	position: absolute;
+	bottom: 0;
+	font-family: 'karla';
+	color: #fff;}
+	
+	.bt-tiktok-dts{
+	height: 215px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;}
+	
+	.bt-tiktok-lateral > i:after{
+	content: "22k";
+	display: block;
+	font-size: 8.5px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-align: center;
+	padding-top: 5px;
+	font-family: karla;}
+	
+	.bt-tiktok-lateral > i.fa-share:after{
+	content: "8k";}
+	
+	.bt-tiktok-lateral > i.fa-comment-dots:after{
+	content: "19k";}
+	
+	.bt-tiktok-lateral > i.fa-heart:after{
+	content: "22k";}
+	
+	.bt-tiktok-info{
+	width: 80%;
+	height: 90px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-direction: column;
+	padding-left: 10px;
+	position: absolute;
+	bottom: 0;
+	font-family: 'karla';
+	color: #fff;}
+	
+	.bt-tiktok-info > a{
+	font-family: 'karla';
+	font-size: 10px;
+	font-weight: 900;
+	color: #fff;}
+	
+	.bt-tiktok-info > span{
+	font-size: 8.5px;
+	padding: 1px 0px;
+	margin-top: 5px;
+	font-weight: 500;}
+	
+	.bt-tiktok-music{
+	height: 14px;
+	font-size: 8px;
+	overflow:hidden;
+	width:96%;
+	margin-top: 5px;}
+	
+	.bt-tiktok-music > i{
+	padding-right: 10px;
+	float:left;}
+	
+	.bt-tiktok-music > span{
+	line-height:11px;
+	width:190%;
+	display:block;}
+	
+	#bt-tiktok-heart:hover:before{
+	color: #BDA79E;
+	position: relative;
+	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff;}
+	
+	.bt-tiktok-header > span:first-child:before{
+	width: 5px; height: 5px;
+	border-radius: 100%;
+	background-image: linear-gradient(to top left, var(--worst), var(--who));
+	display: block; content: "";
+	position: absolute; right: -9px;
+	border: 0.8px solid #fff;}
+	
+	.bt-tiktok-header > span{
+	position: relative;}
